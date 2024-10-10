@@ -1,4 +1,4 @@
-import {Routes, Route} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Home from '../components/Home'
 import About from '../components/About'
 import Users from '../components/Users'
@@ -9,8 +9,9 @@ const Routing = () => {
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
-            <Route path='/users' element={<Users />} />
-            <Route path='/users/:name' element={<UserDetails />} />
+            <Route path='/users' element={<Users />} >
+                <Route path='/users/:name' element={<UserDetails />} />
+            </Route>
         </Routes>
     )
 }
