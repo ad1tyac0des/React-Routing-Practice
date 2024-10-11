@@ -1,17 +1,14 @@
-import { Routes, Route } from 'react-router-dom'
 import Home from '../components/Home'
 import About from '../components/About'
 import Users from '../components/Users'
-import UserDetails from '../components/UserDetails'
+import { Route, Routes } from 'react-router-dom'
 
 const Routing = () => {
     return (
         <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/users' element={<Users />} >
-                <Route path='/users/:name' element={<UserDetails />} />
-            </Route>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/users" element={<Users />}></Route>
         </Routes>
     )
 }

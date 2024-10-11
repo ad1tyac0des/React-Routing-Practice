@@ -1,9 +1,9 @@
-import Nav from './components/Nav'
-import Routing from './utils/Routing'
+import Nav from "./components/Nav";
+import Routing from "./utils/Routing";
 
 const App = () => {
     return (
-        <div className='container h-screen mx-auto pt-[.1px]'>
+        <div className="w-full h-screen bg-zinc-200">
             <Nav />
             <Routing />
         </div>
